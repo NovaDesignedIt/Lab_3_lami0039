@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    ViewData["Title"] = "Count";
+    Layout = "_Layout";
+
+}
+
+
+<form type="submit" asp-controller="Home" asp-action="Razor">
+    <button type="submit">Play Again </button> </form>
+
+
+<h3>
+@{ if (ViewData["number"] != null)
+    {
+
+        int number = Convert.ToInt32(ViewData["number"]);
+
+
+        for (int i = number; i > 0; i--)
+        {
+            {
+                Write( i + " green bottles hanging on the wall" + "and if one green bottle should accidentally fall, " +
+                    "there will be" + (i - 1) + " green bottles handing on the wall" +
+                    "");
+            }
+            {   <br> <br>   }//break line 
+        }
+
+
+    }
+}
+</h3>
+
+
+
+
+
+
+

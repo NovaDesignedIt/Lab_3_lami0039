@@ -1,0 +1,50 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head style="background-color:black">
+
+    <meta charset="utf-8" />
+    <title>lab_3_REST</title>
+ <link href="@Url.Content("~/wwwroot/css/site.css")" rel="stylesheet" type="text/css">
+
+    
+</head>
+<body>
+
+    <header class="hd" style="background-color:dimgrey; color: black">
+        <h1> Meech Lamirande Kabuasa </h1><br>
+        <h2> welcome to my azure website.s</h2>
+
+
+        @Html.ActionLink("Home", "Index", "Home")<br>
+        @Html.ActionLink("Show me the Bottles", "Razor", "Home")<br>
+        @Html.ActionLink("Person", "CreatePerson", "Home")<br>
+        
+
+    </header>
+
+    <hr>
+
+
+    <div class="content">
+        @RenderBody()
+
+    </div>
+
+    <hr>
+    <footer class="hd"  style="background-color:dimgrey; color: black" >
+        <p>(footer)</p>
+        <h2>answers</h2>
+        <h4>what the layout does?</h4>
+        <h2>the layout is like the blue prints of the web page, or the bones of a web page. the _layout file is the template that your views will use<br>
+        when specified in the view the Layout will be used as the template for the wepage
+        </h2>
+        <h4>steps to enter Css sheet</h4>
+        <h2>I created a link to a directory i crated in the wwwroot foler called Style  <code> ~/css/Site.css </code></h2> and linked it using a link tag
+    </footer>
+
+</body>
+
+
+</html>

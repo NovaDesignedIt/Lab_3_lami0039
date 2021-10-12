@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Lab3.Models.Person
+
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Persons";
+}
+<h4> @Html.ActionLink("Create Person", "CreatePerson", "Home")<br></h4>
+
+<h3>Display User </h3>
+<table>
+    <tr>
+        <td>
+            Name:<br>
+        </td>
+        <td>
+            @Model.First_name
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            Last Name: <br>
+        </td>
+        <td>
+            @Model.Last_name<br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            age:<br>
+        </td>
+        <td>
+            @Model.Age<br>
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td>
+            Date of birth:  <br>
+        </td>
+        <td>
+
+            @Model.Date_of_birth <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Email<br>
+        </td>
+        <td>
+            @Model.EmailAddress<br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            password:  <br>
+        </td>
+        <td>
+
+            @Model.password <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            description: <br>
+        </td>
+        <td>
+            @Model.description<br>
+        </td>
+    </tr>
+
+</table>
